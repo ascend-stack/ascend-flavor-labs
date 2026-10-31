@@ -3,7 +3,7 @@
 }
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 24px;
+  scroll-padding-top: 100px;
 }
 body {
   margin: 0;
@@ -48,7 +48,8 @@ textarea:focus-visible {
 .header {
   border-bottom: 1px solid #ffffff20;
   background: #080d12ee;
-  position: relative;
+  position: sticky;
+  top: 0;
   z-index: 20;
   backdrop-filter: blur(16px);
 }

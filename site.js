@@ -24,7 +24,7 @@ function download(name, text) {
   a.remove();
   setTimeout(() => URL.revokeObjectURL(url), 1000);
 }
-document.getElementById("flavor-brief").addEventListener("submit", (e) => {
+document.getElementById("flavor-brief")?.addEventListener("submit", (e) => {
   e.preventDefault();
   const form = e.currentTarget;
   if (!form.reportValidity()) return;
